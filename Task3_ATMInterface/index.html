@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATM Interface</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>🏦 ATM Interface</h2>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Welcome to ATM</h1>
+
+        <div class="balance">
+            Balance: ₹<span id="balance">10000</span>
+        </div>
+
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <button onclick="depositMoney()">
+            Deposit
+        </button>
+
+        <button onclick="withdrawMoney()">
+            Withdraw
+        </button>
+
+        <button onclick="checkBalance()">
+            Check Balance
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
